@@ -12,9 +12,15 @@ It is crucial to note that digital transformation in the current industry goes d
 Catch up with AUC
 
 AUC Official Channels📌
+
 Telegram: https://t.me/aucproject
+
 Website: https://aucunited.com/
+
 Facebook: https://www.facebook.com/advancedunitedcont/
+
 Twitter: https://twitter.com/AUC_Project
+
 Medium: https://advancedunitedcont.medium.com/
+
 Block explorer: https://etherscan.io/token/0x87a92428bbc876d463c21c8e51b903f127d9a9f4
