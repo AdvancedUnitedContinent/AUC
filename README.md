@@ -13,4 +13,4 @@ Here's how AUC project impact the existing financial system.
 
 <hr/>
 • Website : https://aucunited.com/<br/>
-• White paper : https://auc-1.gitbook.io/auc-whitepaper-2.0/
+• Whitepaper : https://auc-1.gitbook.io/auc-whitepaper-2.0/
