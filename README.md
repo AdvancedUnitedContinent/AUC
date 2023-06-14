@@ -8,9 +8,9 @@ The digital assets of the AUC project consist of an ERC20-based AUC token and ou
 
 Here's how AUC project impact the existing financial system.
 
-• Customers are provided with easy payment and remittance services, cost savings through various rewards, and reduction of existing payment fees to increase satisfaction.<br/>
-• Merchants are provided with a free app for store payments instead of the traditional costly POS device, attracting potential customers to use TIER services, and generating more revenue through reduced fees. •Provides banks with new customer acquisition effects such as attracting customers and issuing cards based on the credit data offinancially excluded populations using the AUC financial platform.
-
+- Customers are provided with easy payment and remittance services, cost savings through various rewards, and reduction of existing payment fees to increase satisfaction.
+- Merchants are provided with a free app for store payments instead of the traditional costly POS device, attracting potential customers to use TIER services, and generating more revenue through reduced fees. •Provides banks with new customer acquisition effects such as attracting customers and issuing cards based on the credit data offinancially excluded populations using the AUC financial platform.
 <hr/>
-• Website : https://aucunited.com/<br/>
-• Whitepaper : https://auc-1.gitbook.io/auc-whitepaper-2.0/
+
+- Website : https://aucunited.com/
+- Whitepaper : https://auc-1.gitbook.io/auc-whitepaper-2.0/
