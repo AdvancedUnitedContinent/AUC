@@ -1,6 +1,6 @@
 ![Image Not Found](https://miro.medium.com/v2/resize:fit:720/format:webp/1*AkfrpU0AFWTDBIpe-JfVFQ.png)
 
-Did you all know? AUC can be earned through staking. The AUC project has 3 types of staking services!
+Did you all know? AUC can be earned through staking. The Advanced project has 3 types of staking services!
 
 1. Staking (Loan): This service connects users who stake AUC tokens and users who borrow, generating interest income.
    
