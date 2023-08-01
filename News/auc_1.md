@@ -3,10 +3,10 @@ The AUC is a project that starts with the people in Africa and East Asia and com
 the global payment and remittance markets to provide relative solutions to users.
 
 There have been many factors that have accelerated digital transformation in the financial services industry recently.
-Digital Finance Platforms of the AUC project uses blockchain technology to reduce the increase in transaction costs caused by a third party. 
+Digital Finance Platforms of the Advanced project uses blockchain technology to reduce the increase in transaction costs caused by a third party. 
  
-AUC project has optimal access to establishing payment systems for government and public institutions too!
-Within the AUC project, numerous payment methods using mobile apps, QR Code, Bar Code, Gift Card, and online points have been developed and are now in service in South Africa.
+Advanced project has optimal access to establishing payment systems for government and public institutions too!
+Within the Advanced project, numerous payment methods using mobile apps, QR Code, Bar Code, Gift Card, and online points have been developed and are now in service in South Africa.
 It is crucial to note that digital transformation in the current industry goes deeper than just simple digitalization. AUC provides a better digital experience to South Africans.
 
 Catch up with AUC
