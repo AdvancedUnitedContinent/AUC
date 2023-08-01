@@ -5,7 +5,7 @@ AUC coin was built according to Ethereum Request for Comment 20 and AUC coin,
 
  the fundamental currency of the AUC ecosystem, was also issued on the ERC-20 basis. 
  
-Subsequently, prior to launching its own application services, AUC project will develop 
+Subsequently, prior to launching its own application services, Advanced project will develop 
 
 its original mainnet system and transfer all previous blockdata and accounts to the newly
 
