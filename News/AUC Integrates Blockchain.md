@@ -1,6 +1,7 @@
+
 AUC Project integrates blockchain and digital assets into cross-border remittance and simple payment markets for financially underprivileged
 
- people in Africa and Southeast Asia to provide payment and remittance services, cryptocurrency exchanges, and public system payment solutions. 
+people in Africa and Southeast Asia to provide payment and remittance services, cryptocurrency exchanges, and public system payment solutions. 
 
 AUC project consists of platforms such as payment/ remittance, identity authentication, blockchain, and big data analysis. We are working on AUC project to provide a safe, fast, 
 
