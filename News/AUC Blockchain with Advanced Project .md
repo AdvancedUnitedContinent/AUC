@@ -1,4 +1,4 @@
-![Image Not Found]([https://miro.medium.com/v2/resize:fit:720/format:webp/1*W6ayNT7EIbbf961jSyLkHg.png)
+![Image Not Found](https://miro.medium.com/v2/resize:fit:720/format:webp/1*W6ayNT7EIbbf961jSyLkHg.png)
 
 Blockchain refers to a digital ledger of encrypted transaction information shared among members of a public or private network. 
 
