@@ -22,3 +22,23 @@ function App() {
   );
 }
 ```
+
+```
+import React from 'react';
+import Popover from 'react-native-popover-view';
+
+function App() {
+  return (
+    <Popover
+      from={(sourceRef, showPopover) => (
+        <View>
+          <TouchableOpacity onLongPress={showPopover}>
+            <Text ref={sourceRef}>Press here to open popover!</Text>
+          </TouchableOpacity>
+        </View>
+      )}>
+      <Text>This is the contents of the popover</Text>
+    </Popover>
+  );
+}
+```
