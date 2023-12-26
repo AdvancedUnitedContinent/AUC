@@ -5,6 +5,19 @@
 * 설치 : 
 ```npm i react-native-modal-datetime-picker```
 
+### Setup
+
+```
+npx expo install react-native-modal-datetime-picker @react-native-community/datetimepicker
+```
+> 설정 : app.json 
+```
+{
+  "expo": {
+    "userInterfaceStyle": "automatic"
+  }
+}
+```
 
 ## Useage
 ```
