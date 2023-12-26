@@ -2,6 +2,16 @@
 
 > npm i react-native-popover-view
 
+Table of Contents
+- Features
+- Installation
+- Usage
+- Props
+- Usage with Safe Area Context
+- Troubleshooting
+- Upgrading
+- Contributing
+- Credits
 
 ### Usage
 
