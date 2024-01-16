@@ -183,6 +183,71 @@ const styles = StyleSheet.create({
     },
 });
 
-export default App;```
+export default App;
+```
 
 The problem here is again, we do not use the native driver. And we can’t animate the width value of a view using the driver.
+
+
+So how do we approach this? The driver supports animating the transfrom (position, scale etc.) of views. So if we were to make our outer view have overflow: ‘hidden’, this would make our inner view hidden if it is not directly within the view. And if we change it’s x position over time, we can get the same effect as our above example, except now, we are using the native driver.
+
+
+```
+import React, {Component} from 'react';
+import {StyleSheet, View, Animated} from 'react-native';
+
+class App extends Component {
+
+    animatedValue = new Animated.Value(-300);
+
+    componentDidMount() {
+        Animated.timing(this.animatedValue,
+            {
+                toValue: 0,
+                duration: 3000,
+                useAnimatedDriver: true,
+            }).start();
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <View style={styles.loadBar}>
+                    <Animated.View style={[styles.loadAmount, {transform: [{translateX: this.animatedValue}]}]}/>
+                </View>
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#333',
+    },
+    loadBar: {
+        width: 300,
+        height: 40,
+        backgroundColor: 'white',
+        overflow: 'hidden',
+    },
+    loadAmount: {
+        position: 'absolute',
+        width: 300,
+        height: 40,
+        backgroundColor: 'red',
+    },
+});
+
+export default App;
+```
+
+In conclusion, react-native Animated is a great tool, and using the native driver makes it even better and more powerful! However it doesn’t let us animate on every view value, meaning we have to be more creative with our animations if we wish to make use of it in certain situations.
+
+The future? There is a complete reimplementation of the Animated library https://github.com/software-mansion/react-native-reanimated which (like the examples above) does all the work on the native side, meaning smoother animations for us all. So go check it out!
+
+Thanks for reading!
+
+Original Article - Link [HERE](https://bobbertoc.medium.com/using-usenativedriver-in-react-native-animations-effectively-7191287c6945)
