@@ -10,7 +10,7 @@ In this article, I will discuss a few tips and tricks for making use of the nati
 
 >
 
-Animating colors
+## Animating colors
 Let’s say we have a view that should change from red to green. Our first instinct is to animate the RGB values.
 
 ```
@@ -126,3 +126,63 @@ export default App;
 ```
 
 
+It’s as easy as that. Now our color changing animation will be done on the UI thread.
+
+Let’s look at one more example for a common component used quite frequently.
+
+
+
+## Animating progress bar
+For animating a progress bar, it makes sense to have a view, with a view inside it, with the width value of the inner view increasing over time. Something like this:
+
+```
+
+import React, {Component} from 'react';
+import {StyleSheet, View, Animated} from 'react-native';
+
+class App extends Component {
+
+    animatedValue = new Animated.Value(0);
+
+    componentDidMount() {
+        Animated.timing(this.animatedValue,
+            {
+                toValue: 300,
+                duration: 3000,
+            }).start();
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <View style={styles.loadBar}>
+                    <Animated.View style={[styles.loadAmount, {width: this.animatedValue}]}/>
+                </View>
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#333',
+    },
+    loadBar: {
+        width: 300,
+        height: 40,
+        backgroundColor: 'white',
+    },
+    loadAmount: {
+        position: 'absolute',
+        width: 0,
+        height: 40,
+        backgroundColor: 'red',
+    },
+});
+
+export default App;```
+
+The problem here is again, we do not use the native driver. And we can’t animate the width value of a view using the driver.
