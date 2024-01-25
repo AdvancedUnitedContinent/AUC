@@ -10,3 +10,28 @@ Alternatively, if you prefer to install the app directly to your Android device/
 
 For a small app, builds for Android and iOS platforms trigger within a few minutes. If you encounter any issues along the way, you can reach out on Discord and Forums.
 
+
+
+### 1. Install the latest EAS CLI
+
+`
+npm install -g eas-cli
+`
+
+### 2. Log in to your Expo account
+
+`
+eas login
+`
+
+### 3. Configure the project
+
+`
+eas build:configure
+`
+
+### 4. Run a build
+
+`
+eas build --platform all
+`
