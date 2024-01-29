@@ -9,3 +9,32 @@
 
 - If you only need the property keys, use Object.keys() instead. If you only need the property values, use Object.values() instead.
 
+## Examples
+
+### Using Object.entries()
+
+```
+const obj = { foo: "bar", baz: 42 };
+console.log(Object.entries(obj)); // [ ['foo', 'bar'], ['baz', 42] ]
+
+const arrayLike = { 0: "a", 1: "b", 2: "c" };
+console.log(Object.entries(arrayLike)); // [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ]
+
+const randomKeyOrder = { 100: "a", 2: "b", 7: "c" };
+console.log(Object.entries(randomKeyOrder)); // [ ['2', 'b'], ['7', 'c'], ['100', 'a'] ]
+
+// getFoo is a non-enumerable property
+const myObj = Object.create(
+  {},
+  {
+    getFoo: {
+      value() {
+        return this.foo;
+      },
+    },
+  },
+);
+myObj.foo = "bar";
+console.log(Object.entries(myObj)); // [ ['foo', 'bar'] ]
+
+```
