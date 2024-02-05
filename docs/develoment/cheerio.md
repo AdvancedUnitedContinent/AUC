@@ -38,4 +38,21 @@ $.html();
 
 Once you've loaded the HTML, you can use jQuery-style selectors to find elements within the document.
 
+### Rendering
 
+
+When you're ready to render the document, you can call the html method on the "root" selection:
+
+```
+$.root().html();
+//=>  <html>
+//      <head></head>
+//      <body>
+//        <ul id="fruits">
+//          <li class="apple">Apple</li>
+//          <li class="orange">Orange</li>
+//          <li class="pear">Pear</li>
+//        </ul>
+//      </body>
+//    </html>
+```
