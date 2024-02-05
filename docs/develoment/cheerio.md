@@ -13,3 +13,8 @@ $('h2').addClass('welcome');
 $.html();
 //=> <html><head></head><body><h2 class="title welcome">Hello there!</h2></body></html>
 ```
+
+## Installation
+> npm install cheerio
+
+
