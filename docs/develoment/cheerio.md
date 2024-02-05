@@ -17,4 +17,25 @@ $.html();
 ## Installation
 > npm install cheerio
 
+## API
+
+### Loading
+
+```
+// ES6 or TypeScript:
+import * as cheerio from 'cheerio';
+
+// In other environments:
+const cheerio = require('cheerio');
+
+const $ = cheerio.load('<ul id="fruits">...</ul>');
+
+$.html();
+//=> <html><head></head><body><ul id="fruits">...</ul></body></html>
+```
+
+### Selectors
+
+Once you've loaded the HTML, you can use jQuery-style selectors to find elements within the document.
+
 
