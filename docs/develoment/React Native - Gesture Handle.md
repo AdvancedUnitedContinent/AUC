@@ -69,3 +69,18 @@ function App() {
   // ...
 }
 ```
+
+
+### Step 4
+And add it to the ball's styles:
+
+```
+// ...
+return (
+  <GestureDetector>
+    <Animated.View style={[styles.ball, animatedStyles]} />
+  </GestureDetector>
+);
+// ...
+```
+
