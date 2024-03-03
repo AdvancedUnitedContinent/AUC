@@ -39,3 +39,33 @@ function Ball() {
   );
 }
 ```
+
+
+### Step 3
+We also need to define shared values to keep track of the ball position and create animated styles in order to be able to position the ball on the screen:
+
+```
+import {
+  useSharedValue,
+  useAnimatedStyle,
+  withSpring,
+} from 'react-native-reanimated';
+
+function App() {
+  const isPressed = useSharedValue(false);
+  const offset = useSharedValue({ x: 0, y: 0 });
+
+  const animatedStyles = useAnimatedStyle(() => {
+    return {
+      transform: [
+        { translateX: offset.value.x },
+        { translateY: offset.value.y },
+        { scale: withSpring(isPressed.value ? 1.2 : 1) },
+      ],
+      backgroundColor: isPressed.value ? 'yellow' : 'blue',
+    };
+  });
+
+  // ...
+}
+```
