@@ -87,6 +87,5 @@ Tooltip renders again with the real tooltipHeight (so the tooltip is correctly p
 React updates it in the DOM, and the browser finally displays the tooltip.
 Hover over the buttons below and see how the tooltip adjusts its position depending on whether it fits:
 
-
-
+[Link - react.dev](https://react.dev/reference/react/useLayoutEffect)
 
