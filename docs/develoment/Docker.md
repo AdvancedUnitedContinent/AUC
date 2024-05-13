@@ -15,5 +15,12 @@ docker rm // 컨테이너를 삭제
 docker rmi // 이미지를 삭제
 ```
 
+```
+// 우분투 설치 , 깃 설치
 
-
+docker pull ubuntu:bionic
+docker run -it ubuntu:bionic bash
+apt update
+apt install -y git
+git --version
+```
