@@ -34,3 +34,27 @@ Closures are useful for several reasons:
 - **Module Pattern**: Closures can be used to create modules, encapsulating private variables and exposing only what is necessary.
 
 Understanding closures is essential for mastering JavaScript, as they are widely used in various programming patterns and libraries.
+
+
+
+```javascript
+function createSecret(secret) {
+  return {
+    getSecret: function () {
+      return secret;
+    },
+    setSecret: function (newSecret) {
+      secret = newSecret;
+    },
+  };
+}
+
+const secretKeeper = createSecret("initial secret");
+
+console.log(secretKeeper.getSecret()); // "initial secret"
+secretKeeper.setSecret("new secret");
+console.log(secretKeeper.getSecret()); // "new secret"
+
+```
+
+
